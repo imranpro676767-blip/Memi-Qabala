@@ -1,0 +1,6 @@
+{
+  "name": "Memi Qəbələ",
+  "description": "Avropadan seçilmiş premium geyim, ayaqqabı və aksessuarların satış butiki və idarəetmə platforması.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

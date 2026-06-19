@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-red-50: #F0F6F3;
+  --color-red-100: #D2E4DC;
+  --color-red-500: #143D2D;
+  --color-red-600: #0E3022;
+  --color-red-650: #072218;
+  --color-red-652: #05140F;
+  --color-red-655: #030D0A;
+
+  --color-gold-50: #FAF8F4;
+  --color-gold-100: #F2EADB;
+  --color-gold-200: #E6D7BD;
+  --color-gold-500: #C2A476;
+  --color-gold-600: #AF9164;
+  --color-gold-705: #8A7045;
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Scrollbar behaviors */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Custom shimmer animations */
+@keyframes shimmer-green {
+  0%, 100% {
+    background-position: 0% 50%;
+    opacity: 0.95;
+    filter: drop-shadow(0 0 5px rgba(20, 61, 45, 0.2));
+  }
+  50% {
+    background-position: 100% 50%;
+    opacity: 1;
+    filter: drop-shadow(0 0 15px rgba(194, 164, 118, 0.45));
+  }
+}
+
+.animate-shimmer-green {
+  background-size: 200% auto;
+  animation: shimmer-green 3.5s ease-in-out infinite;
+}
